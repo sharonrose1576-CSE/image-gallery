@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>✨ Image Gallery</h1>
+        <p>Explore the beauty of the world</p>
+    </header>
+
+    <nav class="filters">
+        <button class="filter-btn active" data-category="all">All</button>
+        <button class="filter-btn" data-category="nature">Nature</button>
+        <button class="filter-btn" data-category="animals">Animals</button>
+        <button class="filter-btn" data-category="city">City</button>
+    </nav>
+
+    <main class="gallery" id="gallery">
+
+        <div class="gallery-item" data-category="nature">
+            <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=600" alt="Beautiful mountain lake">
+            <div class="caption">Mountain Lake</div>
+        </div>
+
+        <div class="gallery-item" data-category="animals">
+            <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?w=600" alt="Cute dog">
+            <div class="caption">Cute Dog</div>
+        </div>
+
+        <div class="gallery-item" data-category="city">
+            <img src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?w=600" alt="City skyline">
+            <div class="caption">City Lights</div>
+        </div>
+
+        <div class="gallery-item" data-category="nature">
+            <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=600" alt="Green forest">
+            <div class="caption">Green Forest</div>
+        </div>
+
+        <div class="gallery-item" data-category="animals">
+            <img src="https://images.unsplash.com/photo-1552053831-71594a27632d?w=600" alt="Golden retriever">
+            <div class="caption">Golden Retriever</div>
+        </div>
+
+        <div class="gallery-item" data-category="city">
+            <img src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?w=600" alt="Modern architecture">
+            <div class="caption">Architecture</div>
+        </div>
+
+    </main>
+
+    <div class="lightbox" id="lightbox">
+        <button class="close-btn" id="closeBtn" aria-label="Close image">&times;</button>
+        <button class="nav-btn prev-btn" id="prevBtn" aria-label="Previous image">&#10094;</button>
+        <img id="lightboxImg" src="" alt="Enlarged gallery image">
+        <button class="nav-btn next-btn" id="nextBtn" aria-label="Next image">&#10095;</button>
+        <p id="lightboxCaption"></p>
+    </div>
+
+    <footer>
+        <p>Made with ❤️ using HTML, CSS & JavaScript</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
